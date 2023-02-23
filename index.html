@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+
+    <script defer src="src/js/script.js"></script>
+
+    <title>Hogwarts Legacy</title>
+</head>
+<body>
+    <div class="fundoVideo">
+        <video class="video" src="src/video/video-hogwarts.mp4" autoplay loop muted>  
+        </video>
+    </div>
+    <div class="cantos">
+        <img id="direito-cima" src="src/images/cantos/direito-cima.webp">
+        <img id="esquerdo-cima" src="src/images/cantos/esquerdo-cima.webp">
+        <img id="direito-baixo" src="src/images/cantos/direito-baixo.webp">
+        <img id="esquerdo-baixo" src="src/images/cantos/esquerdo-baixo.webp">
+    </div>
+
+
+
+    
+    <header class="cabecalho">
+        <a href="">
+            <img class="logo" src="src/images/logo.png" alt="Logo Hogwarts Legacy">
+        </a>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="detalhes.html">Detalhes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="informacoes">
+            <img class="imagemTitulo" src="src/images/titulo.png" alt="Titulo do Filme">
+            <p class="descricao">Hogwarts Legacy é um RPG de ação e mundo aberto ambientado no mundo apresentado nos livros de Harry Potter. Agora você pode assumir o controle da ação e criar sua própria aventura. Descubra a sensação de viver em Hogwarts enquanto faz aliados, luta contra bruxos das trevas e, por fim, decide o destino do mundo bruxo. Seu legado é o que você faz dele.</p>
+            <button class="botaoTrailer" onclick="openTrailer()">Veja o trailer</button>
+        </div>
+        <img class="brasao" src="src/images/hogwarts.png" alt="Brasão Hogwarts">
+
+        <div class="modal">
+            <div class="conteudoModal">
+                <span class="fecharModal">X</span>
+                <iframe id="video" width="640" height="360" src="https://www.youtube.com/embed/78CP8na1Fpo" title="Hogwarts Legacy – Trailer Oficial de Lançamento 4K" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
