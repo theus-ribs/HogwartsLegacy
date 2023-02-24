@@ -1,0 +1,107 @@
+body {
+    font-family: 'Poppins';
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.cabecalho {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    padding: 30px;
+    max-width: 1440px;
+    margin: auto;
+}
+.logo {
+    width: 65px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.menu li a {
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.menu li a:hover {
+    background-color: #886a2d;
+}
+.container {
+    margin: 0 auto;
+    display: flex;
+    height: calc(100vh - 132px); /*vh = viewport, está deixando a altura do tamanho da tela do cliente, mas tirando 132px que seria o tamanho do header*/
+    align-items: center;
+    padding: 0 30px 30px;
+}
+.colunas{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin: auto;
+    gap: 100px;
+    color: #a8adb7;
+    font-style: italic;
+}
+#col1, #col2, #col3{
+    width: 300px;
+    text-align: center;
+}
+#col1 img, #col2 img, #col3 img{
+    height: 40vh;
+}
+.colunas div h3{
+    font-size: 1.3vw;
+    padding-bottom: 30px;
+    font-style: italic;
+}
+p{
+    font-size: 0.8vw;
+}
+
+.video{
+    background-color: #886a2d;
+    position: absolute;
+    z-index: -2; /* eixo z = eixo de profundidade, está declarando que o video ficara em baixo do conteudo por ter ser -1 no eixo z */
+    width: 100vw;
+    height: 100vh;
+}
+
+.fundoVideo::after{ /* cria um conteudo dentro do html */
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: black;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%,rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
+}
+#direito-cima, #esquerdo-cima, #direito-baixo, #esquerdo-baixo{
+    z-index: -1;
+    width: 244px;
+    position: absolute;
+}
+
+#direito-baixo{
+    right: 0;
+	bottom: 0;
+}
+#direito-cima{
+    right: 0;
+	top: 0;
+}
+#esquerdo-cima{
+    left: 0;
+	top: 0;
+}
+#esquerdo-baixo{
+    left: 0;
+	bottom: 0;
+}
